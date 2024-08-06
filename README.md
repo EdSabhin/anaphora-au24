@@ -1,5 +1,5 @@
 # Astro Starter Kit: Blog
-
+A
 ```sh
 npm create astro@latest -- --template blog
 ```
