@@ -1,5 +1,5 @@
 # Astro Starter Kit: Blog
-A wise man once 
+A wise man once said:
 ```sh
 npm create astro@latest -- --template blog
 ```
