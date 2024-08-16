@@ -1,0 +1,16 @@
+---
+const { url, articleName, articleHeadline } = Astro.props;
+---
+
+<div
+  class="w-full md:w-[70%] flex flex-col justify-center items-center pt-4 pb-8 gap-4 hover:bg-gradient-to-r from-[65%] from-stone-100 via-indigo-100 hover:text-indigo-500 border-x-2 border-rose-300 hover:border-indigo-200 hover:shadow-md hover:shadow-indigo-100 rounded-2xl transition-all ease-in-out duration-500"
+>
+  <img src="" alt="" />
+  <h2 class="cardo-regular text-2xl text-rose-400">{articleName}</h2>
+  <h3 class="playfair-display text-2xl">{articleHeadline}</h3>
+  <a
+    href={url}
+    class="cardo-regular-italic text-2xl cursor-pointer hover:text-stone-600 hover:underline underline-offset-8 decoration-double"
+    >View
+  </a>
+</div>
