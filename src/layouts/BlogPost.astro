@@ -16,19 +16,12 @@ const { title, subHeadline, description, pubDate, updatedDate, heroImage } =
     <BaseHead title={title} description={description} />
   </head>
 
-  <body>
+  <body class="body-gradient">
     <Header />
     <main
       class="w-full flex flex-col justify-center items-center py-[5%] px-[23%] gap-12"
     >
       <article>
-        <!-- <div class="w-full flex justify-center items-center">
-          {
-            heroImage && (
-              <img width={1020} height={510} src={heroImage} alt="" />
-            )
-          }
-        </div> -->
         <div>
           <div class="w-full flex justify-center items-center playfair-display">
             <div class="w-full flex flex-col justify-center items-start gap-20">
@@ -51,7 +44,13 @@ const { title, subHeadline, description, pubDate, updatedDate, heroImage } =
                 </h2>
               </div>
             </div>
-
+            <!-- <div class="w-full flex justify-center items-center">
+          {
+            heroImage && (
+              <img width={1020} height={510} src={heroImage} alt="" />
+            )
+          }
+        </div> -->
             <hr />
           </div>
           <slot />

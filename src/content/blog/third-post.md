@@ -1,7 +1,9 @@
 ---
 title: 'Third post'
+subHeadline: "1st subheadline"
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 22 2022'
+updatedDate: 'Aug 17 2024'
 heroImage: '/blog-placeholder-2.jpg'
 ---
 
