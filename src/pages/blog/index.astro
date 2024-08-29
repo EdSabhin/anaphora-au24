@@ -23,7 +23,7 @@ const posts = (await getCollection("blog")).sort(
       <section
         class="w-full flex flex-col justify-center items-center py-[5%] px-[23%]"
       >
-        <ul class="flex flex-col gap-14">
+        <!-- <ul class="flex flex-col gap-14">
           {
             posts.map((post) => (
               <li>
@@ -44,6 +44,30 @@ const posts = (await getCollection("blog")).sort(
               </li>
             ))
           }
+        </ul> -->
+        <ul
+          class="w-full flex flex-col md:flex-row justify-center items-center gap-32 cardo-regular text-3xl"
+        >
+          <div class="flex flex-col gap-8">
+            <h1>Blockchain</h1>
+            <ul class="list-disc flex flex-col gap-8">
+              <li class="playfair-display text-xl">
+                The New Flow of Transactions
+              </li>
+              <li class="playfair-display text-xl">
+                The New Flow of Transactions
+              </li>
+              <li class="playfair-display text-xl">
+                The New Flow of Transactions
+              </li>
+            </ul>
+          </div>
+          <h1>AI</h1>
+          <h1 class="flex flex-col">
+            Memology <span class="text-xl">(Coming Soon)</span>
+          </h1>
+          <h1>Art</h1>
+          <h1>Ponderings</h1>
         </ul>
       </section>
     </main>

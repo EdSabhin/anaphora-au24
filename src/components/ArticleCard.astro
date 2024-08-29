@@ -1,5 +1,5 @@
 ---
-const { url, articleName, articleHeadline } = Astro.props;
+const { url, articleName, articleHeadline, pubDate } = Astro.props;
 ---
 
 <div
@@ -8,6 +8,7 @@ const { url, articleName, articleHeadline } = Astro.props;
   <img src="" alt="" />
   <h2 class="cardo-regular text-2xl text-rose-400">{articleName}</h2>
   <h3 class="playfair-display text-2xl">{articleHeadline}</h3>
+   <h4 class="playfair-display text-xl">{pubDate}</h4> 
   <div class="w-full flex justify-end mt-8 mr-14">
     <a
       href={url}

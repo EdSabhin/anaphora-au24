@@ -25,6 +25,10 @@
   font-style: normal;
 }
 
+.body {
+  list-style: circle;
+}
+
 @keyframes colorChange {
   0% {
     color: #000000;
