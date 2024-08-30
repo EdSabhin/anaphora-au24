@@ -1,0 +1,47 @@
+---
+const words = ["Option 1", "Option 2", "Option 3", "Option 4"];
+let currentIndex = 0;
+
+function changeWord() {
+  currentIndex = (currentIndex + 1) % words.length;
+  document.getElementById("word").textContent = words[currentIndex];
+}
+---
+
+<div id="word-container" class="flex gap-10 mb-14">
+  <span id="word" class="word">Option 1</span>
+  <button onclick="()=>changeWord" class="change-button">Change Option</button>
+</div>
+
+<style>
+  .word {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .change-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .change-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+  const words = ["Option 1", "Option 2", "Option 3", "Option 4"];
+  let currentIndex = 0;
+
+  function changeWord() {
+    currentIndex = (currentIndex + 1) % words.length;
+    document.getElementById("word").textContent = words[currentIndex];
+  }
+</script>
