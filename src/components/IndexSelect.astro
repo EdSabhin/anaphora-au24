@@ -8,10 +8,10 @@ function changeWord() {
 ---
 
 <div class="flex flex-col md:flex-row items-center gap-10 mb-20">
-  <span id="word" class="cardo-regular text-3xl">{words[currentIndex]}</span>
+  <span id="word" class="cardo-regular text-3xl py-3 px-6 border-l border-stone-300 rounded-sm shadow-md shadow-rose-100">{words[currentIndex]}</span>
   <button
     onclick="changeWord()"
-    class="w-full playfair-display text-3xl pt-6 pb-8 pr-5 pl-5 shadow-md shadow-stone-300 border-t-4 rounded-tl-xl rounded-br-full transition-all ease-in-out duration-100 animated-button"
+    class="w-[28%] md:w-full playfair-display text-3xl pt-7 md:pt-6 pb-10 md:pb-8 px-5 shadow-md shadow-stone-300 border-t-4 rounded-tl-xl rounded-br-full transition-all ease-in-out duration-100 animated-button"
     ><span class="rotated-text">Λ</span></button
   >
 </div>
