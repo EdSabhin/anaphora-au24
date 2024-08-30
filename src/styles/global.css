@@ -58,6 +58,35 @@
     underlineChange 3s infinite alternate;
 }
 
+@keyframes colorChangeButton {
+  0% {
+    color: #f97099;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #f97099;
+  }
+}
+
+@keyframes bgColorChange {
+  0% {
+    background-color: #4b4b4b;
+  }
+  50% {
+    background-color: #5e2336;
+  }
+  100% {
+    background-color: #4b4b4b;
+  }
+}
+
+.animated-button {
+  animation: colorChangeButton 3s infinite alternate,
+  bgColorChange 3s infinite alternate;
+}
+
 .body-gradient {
   background-image: linear-gradient(
     90deg,
@@ -72,4 +101,9 @@
     hsl(338deg 100% 99%) 99%,
     hsl(338deg 100% 98%) 100%
   );
+}
+
+.rotated-text {
+  display: inline-block; 
+  transform: rotate(90deg);  
 }
