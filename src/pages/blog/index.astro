@@ -21,9 +21,7 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Header />
     <main>
-      <section
-        class="w-full flex flex-col justify-center items-center py-[5%] px-[23%]"
-      >
+      <section class="w-full flex flex-col py-20 px-4 md:py-[5%] md:px-[23%]">
         <!-- <ul class="flex flex-col gap-14">
           {
             posts.map((post) => (
@@ -48,12 +46,16 @@ const posts = (await getCollection("blog")).sort(
         </ul> -->
         <div class="w-full flex flex-col justify-center items-center">
           <IndexSelect />
-          <ul
-            class="w-full flex flex-col md:flex-row justify-center items-center gap-32 cardo-regular text-3xl"
+          <div
+            class="w-full flex flex-col md:flex-row justify-center items-center gap-20 md:gap-36 cardo-regular text-3xl"
           >
-            <div class="flex flex-col gap-8">
+            <div
+              class="w-full flex flex-col justify-center md:justify-start items-center md:items-start gap-8"
+            >
               <h1 class="">Decentralization</h1>
-              <ul class="list-disc flex flex-col gap-8">
+              <ul
+                class="list-disc list-inside flex flex-col pr-4 md:pr-0 gap-8 text-center tracking-wide md:tracking-normal"
+              >
                 <li
                   class="playfair-display text-xl hover:text-rose-400 cursor-pointer transition duration-300 ease-in-out"
                 >
@@ -71,9 +73,13 @@ const posts = (await getCollection("blog")).sort(
                 </li>
               </ul>
             </div>
-            <div class="flex flex-col gap-8">
-              <h1 class="">Blockchain Development</h1>
-              <ul class="list-disc flex flex-col gap-8">
+            <div
+              class="w-full flex flex-col justify-center md:justify-start items-center md:items-start gap-8"
+            >
+              <h1 class="">Decentralization</h1>
+              <ul
+                class="list-disc list-inside flex flex-col pr-4 md:pr-0 gap-8 text-center tracking-wide md:tracking-normal"
+              >
                 <li
                   class="playfair-display text-xl hover:text-rose-400 cursor-pointer transition duration-300 ease-in-out"
                 >
@@ -91,7 +97,8 @@ const posts = (await getCollection("blog")).sort(
                 </li>
               </ul>
             </div>
-          </ul>
+          
+          </div>
         </div>
       </section>
     </main>
